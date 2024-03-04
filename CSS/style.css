@@ -1,0 +1,197 @@
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+    width: 100%;
+}
+
+.navi{
+    display: flex;
+    flex-direction: column;
+    border: 4px solid gray;
+    position:fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 1000;
+}
+    .md-nav {
+        padding: 50px;
+        margin-top: 50px;
+    }
+    .nav-items {
+        list-style:none;
+        padding-left: 0;
+        min-width: 100px;
+    }
+        .nav-items > li {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+
+    #navi-items a:hover {
+        background-color: #555;
+        color: white;
+    }
+
+    .foot li{
+        padding: 2px;
+        margin: 5px;
+    }
+
+    .foot li:hover {
+        background-color: #555;
+        color: white;
+    }
+
+#content {
+    margin-right: 0;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.name{
+    color:crimson;
+    font-weight: bold;
+    text-align: center;
+}
+
+.project img {
+    object-fit: cover;
+}
+
+    .shrink img {
+        transition: 1s ease;
+        }
+        
+        .shrink img:hover{
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+        transition: 1s ease;
+        }
+
+    .card {
+        width: 100%;
+    }
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-2 {
+    display: none;
+}
+
+@media (max-width: 992px) and (min-width: 424px) {
+    .navi {
+        position: sticky;
+        display: inline-flex;
+        top: 0;
+        height: 50px;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .navi h1{
+        margin-top:  5px;
+    }
+
+    .md-nav, .nav-items {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-basis: 100px;
+        width: 100%;
+        flex: 1;
+        margin-bottom: 0;
+    }
+        .nav-items > li {
+            margin-left: 5px ;
+            font-size: 20px;
+            flex-grow: 1;
+            text-align: center;
+        }
+    
+        .foot, .logo {
+            display: none;
+        }
+
+        .foot-2 {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            margin-top: 20px;
+        }
+
+        .foot-2 ul {
+            display: flex;
+            
+            padding-left: 250px;
+            padding-right: 250px;
+        } 
+
+        .foot-2 li {
+            min-width: 100px;
+        }
+
+        .foot-2 li:hover {
+            background-color: #555;
+            color: white;
+        }
+}
+
+@media (max-width: 423px) {
+    .navi {
+        position: sticky;
+        display: inline-flex;
+        top: 0;
+        height: 70px;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .navi h1{
+        margin-top:  5px;
+    }
+
+    .md-nav, .nav-items {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-basis: 100px;
+        width: 100%;
+        flex: 1;
+    }
+        .nav-items > li {
+            margin-left: 5px ;
+            font-size: 20px;
+            flex-grow: 1;
+            text-align: center;
+        }
+    
+        .foot, .logo {
+            display: none;
+        }
+
+        .foot-2 {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            margin-top: 20px;
+            padding: 0;
+        }
+
+        .foot-2 li:hover {
+            background-color: #555;
+            color: white;
+        }
+}
